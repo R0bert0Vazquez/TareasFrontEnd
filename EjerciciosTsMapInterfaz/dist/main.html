@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Tareas</title>
+</head>
+
+<body>
+    <h1 id="userName">Lista de Tareas</h1>
+
+    <div>
+        <h2>Agregar Nueva Tarea</h2>
+        <input type="text" id="newTaskInput" placeholder="Nueva tarea">
+        <button id="addTaskBtn">Agregar</button>
+    </div>
+
+    <div>
+        <h2>Lista de Tareas</h2>
+        <div>
+            <label>
+                <input type="checkbox" id="showCompleteCheckbox">
+                Mostrar tareas completadas
+            </label>
+        </div>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Tarea</th>
+                    <th>Estado</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="todoList">
+            </tbody>
+        </table>
+        <br>
+        <button id="removeCompleteBtn">Eliminar Tareas Completadas</button>
+    </div>
+
+    <script type="module" src="index.js"></script>
+</body>
+
+</html>
