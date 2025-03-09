@@ -1,0 +1,47 @@
+
+/**
+* tsconfig del libro
+* tsconfig es el más básico, configurado para ES2018
+* y ES6 sin opciones estrictas ni especificaciones de 
+* resolución de módulos.
+*/
+// { 
+//     "compilerOptions": {
+//         "target": "ES2018",
+//         "outDir": "./dist",
+//         "rootDir": "./src",
+//         "module": "CommonJS",
+//     }
+// }
+
+/**
+* tsconfig usa ES6 tanto para el target como para 
+* el módulo y es estricto, pero no especifica la 
+* resolución de módulos ni la interoperabilidad con ES.
+*/
+// {
+//     "compilerOptions": {
+//         "module": "ES6",
+//         "target": "ES6",
+//         "outDir": "./dist",
+//         "rootDir": "./src",
+//         "strict": true
+//     }
+// }
+
+/**
+* tsconfig es el más completo y estricto,
+* usando ES2018, Node.js para la resolución de módulos 
+* y haciendo el código más seguro con la configuración strict.
+*/
+{
+    "compilerOptions": {
+        "target": "ES2018",
+        "outDir": "./dist",
+        "rootDir": "./src",
+        "module": "ES6",
+        "moduleResolution": "node",
+        "strict": true,
+        "esModuleInterop": true
+    }
+}

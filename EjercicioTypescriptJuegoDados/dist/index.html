@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Dados</title>
+    <link rel="stylesheet" href="style.css"> <!-- Enlazar el archivo CSS -->
+</head>
+<body>
+    <div class="container">
+        <h1>Juego de Dados</h1>
+
+        <!-- Formulario para ingresar los nombres de los jugadores -->
+        <div id="formulario">
+            <label for="jugador1">Nombre del Jugador 1:</label>
+            <input type="text" id="jugador1" placeholder="Jugador 1">
+            <br>
+            <label for="jugador2">Nombre del Jugador 2:</label>
+            <input type="text" id="jugador2" placeholder="Jugador 2">
+            <br>
+            <button id="iniciarJuego">Iniciar Juego</button>
+        </div>
+
+        <!-- Área para mostrar los resultados -->
+        <div id="juego" style="display: none;">
+            <h2>Progreso del Juego</h2>
+            <table id="tablaResultados">
+                <thead>
+                    <tr>
+                        <th>Jugada</th>
+                        <th id="nombreJugador1"></th>
+                        <th id="nombreJugador2"></th>
+                    </tr>
+                </thead>
+                <tbody id="cuerpoTabla">
+                    <!-- Las filas se agregarán dinámicamente -->
+                </tbody>
+            </table>
+            <p id="resultado"></p>
+            <button id="reiniciarJuego" style="display: none;">Reiniciar Juego</button>
+        </div>
+    </div>
+
+    <script type="module" src="PrincipalModificado.js"></script> <!-- Enlazar el archivo TypeScript -->
+</body>
+</html>
